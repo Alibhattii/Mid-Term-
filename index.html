@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/favicon.png" type="image/png"/>
+    <title>Food & Grocery Delivery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+</head>
+<!-- BODY -->
+<body>
+   <header>
+        <!-- HEADER -->
+        <!--NAV BAR  -->
+        <nav class="header">
+            
+            <svg class="profo" aria-hidden="true" focusable="false" class="fl-interaction-primary" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-testid="personal-icon"><path fill-rule="evenodd" fill="rgb(234, 129, 174)" clip-rule="evenodd" d="M12 11.5C13.933 11.5 15.5 9.933 15.5 8C15.5 6.067 13.933 4.5 12 4.5C10.067 4.5 8.50001 6.067 8.50001 8C8.50001 9.933 10.067 11.5 12 11.5ZM10.0566 14.2045C10.679 14.071 11.33 14.0001 12 14C12.0003 14 12.0007 14 12.001 14C12.6709 14 13.3218 14.0708 13.9442 14.2042C17.1008 14.881 19.5251 17.1688 19.9907 20.0041C20.0802 20.5491 19.6241 21 19.0718 21H4.93021C4.37792 21 3.92177 20.5491 4.01127 20.0041C4.47684 17.1692 6.90063 14.8815 10.0566 14.2045ZM10.1743 12.6562C8.31584 11.9269 7.00001 10.1171 7.00001 8C7.00001 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.1169 15.6845 11.9265 13.8263 12.656C13.2609 12.8779 12.6452 12.9999 12.001 13C12.0007 13 12.0003 13 12 13C11.3557 13 10.7399 12.8781 10.1743 12.6562ZM18.3216 19.5C17.5644 17.2951 15.1351 15.5 12.001 15.5C8.86687 15.5 6.43759 17.2951 5.6804 19.5H18.3216Z"></path></svg>
+  
+            <span aria-label="foodpanda" style="display: flex; align-items: flex-end; justify-content: center; gap: 8px;">
+                <svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28" data-testid="brand-icon-icon" aria-hidden="true" focusable="false" class="logo-icon"><path d="M35 0H5C2.24 0 0 2.24 0 5v30c0 2.76 2.24 5 5 5h30c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5Z" fill="#ff2b85"></path><path d="M14.58 17.53c.41-.04.71-.4.68-.81a.756.756 0 0 0-.81-.68c-.39.03-.68.35-.68.74.02.43.38.76.81.75Zm10.44-1.33c.12-.09.25-.14.4-.16.43-.02.79.32.81.75 0 .41-.33.75-.75.75s-.75-.33-.75-.75c0-.23.11-.45.29-.59Z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M33.51 14.52v-.03c-.15-.3-.1-.65.12-.9a4.983 4.983 0 0 0 .89-4.78c-.06-.19-.34-.24-.61-.29-.26-.05-.52-.09-.62-.26-.09-.15-.06-.38 0-.63.02-.07.03-.13.04-.2.05-.26.07-.51-.06-.64s-.28-.26-.42-.37l-.09-.07c-1-.74-2.23-1.1-3.47-1.03-1.08.05-2.23.41-3.06 1.14-.4.29-.92.37-1.39.22l-.07-.02c-.84-.3-1.7-.52-2.58-.66a14.28 14.28 0 0 0-6.95.66h-.05c-.45.18-.96.1-1.35-.19-1.55-1.37-4.68-1.71-6.72.01-2.23 1.88-2.36 5.17-.71 7.1.22.25.26.6.12.9-.98 2-1.5 4.2-1.51 6.43 0 7.97 6.72 13.77 15 13.77 8.28 0 15-5.8 15-13.77 0-2.22-.52-4.41-1.49-6.41 0 0 0 .02-.01.02h-.01ZM19.9 20.19c1.19 0 2.15.26 2.15.72 0 .46-.96 1.5-2.15 1.5s-2.15-1.04-2.15-1.5c0-.46.96-.72 2.15-.72ZM7.86 11.8a.578.578 0 0 1-.18-.2c-.02-.03-.04-.07-.06-.1-.36-.66-.45-1.44-.23-2.16.42-1.41 1.92-2.24 3.35-2.05.37.05.74.17 1.07.35.14.08.26.17.37.28.04.04.08.09.1.15.02.09 0 .18-.07.25-.06.06-.14.11-.22.15-1.37.8-2.49 1.95-3.52 3.14-.17.19-.35.37-.61.19Zm3.66 11.33c-1.24-.14-2.32-1.45-2.73-2.77-.18-.58-.61-3.26 1.31-5.2.64-.64 1.54-1.21 2.79-1.59.41-.1.82-.15 1.24-.15.62 0 1.36.1 1.95.53 1.24.91 1.26 2.44.52 3.23s-2.4 2.59-2.83 4.06c-.42 1.47-1.01 2.04-2.26 1.9 0 0 .01-.01.01 0v-.01Zm8.4 4.43h-.04c-2.39-.01-4.32-1.7-4.32-3.4 0-.59.26-.89.89-.73.37.09 1.89.48 3.27.48h.35c1.35 0 2.82-.37 3.24-.48h.03c.64-.16.89.14.89.72 0 1.7-1.93 3.39-4.32 3.4h.01v.01Zm11.09-7.22c-.41 1.32-1.49 2.63-2.73 2.77-1.24.14-1.83-.42-2.26-1.9-.43-1.47-2.09-3.28-2.83-4.07-.74-.78-.72-2.32.52-3.23.58-.43 1.33-.53 1.95-.53.42 0 .83.05 1.24.15 1.25.38 2.15.94 2.79 1.58 1.92 1.94 1.49 4.62 1.31 5.2 0 0 .01.03 0 .03h.01Zm1.37-8.84-.06.1a.86.86 0 0 1-.18.2c-.26.18-.44 0-.61-.19-1.03-1.19-2.15-2.34-3.52-3.14a1.07 1.07 0 0 1-.22-.15.33.33 0 0 1-.08-.25c.02-.06.05-.11.1-.15.11-.11.23-.21.37-.28.33-.18.7-.3 1.07-.35 1.43-.19 2.93.64 3.35 2.05.21.72.13 1.5-.23 2.16h.01Z" fill="#fff"></path></svg><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 27" height="22" data-testid="brand-icon-text" aria-hidden="true" focusable="false"><path d="M0 6.56h2.3V4.39C2.3 1.76 3.74 0 6.6 0l1.44.29v2.63l-1.57-.29c-.86 0-1.29.59-1.29 1.47v2.46h2.86v2.63H5.17v11.13H2.3V9.19H0V6.56Zm15.48-.29c3.73 0 7.03 2.92 7.03 7.17s-3.3 7.17-7.03 7.17c-3.73 0-7.03-2.92-7.03-7.17s3.3-7.17 7.03-7.17Zm0 11.7c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54-4.16 2.04-4.16 4.54c-.01 2.5 1.43 4.54 4.16 4.54ZM30.8 6.27c3.73 0 7.03 2.92 7.03 7.17s-3.3 7.17-7.03 7.17c-3.73 0-7.03-2.92-7.03-7.17s3.3-7.17 7.03-7.17Zm0 11.7c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54-4.16 2.04-4.16 4.54c-.01 2.5 1.43 4.54 4.16 4.54Zm22.06 2.34h-2.58L50 19.14l-.15-.15-.15.15c-.86.88-2.3 1.47-3.73 1.47-3.73 0-6.89-2.92-6.89-7.17s3.16-7.17 6.89-7.17c1.4 0 2.87.59 3.73 1.47l.15.15.15-.15V0h2.87v20.3l-.01.01ZM46.12 8.9c-2.73 0-4.19 2.04-4.19 4.54s1.46 4.54 4.19 4.54c2.44 0 4.16-2.04 4.16-4.54S48.56 8.9 46.12 8.9Zm9.62-2.35h2.58l.26 1.17.17.15.15-.15c.86-.88 2.3-1.47 3.73-1.47 3.73 0 6.89 2.92 6.89 7.17s-3.16 7.17-6.89 7.17c-1.4 0-2.87-.59-3.73-1.47l-.15-.15-.17.15v7.38h-2.84V6.55Zm6.74 11.41c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54c-2.44 0-4.16 2.04-4.16 4.54s1.72 4.54 4.16 4.54Zm14.26-6.2h2.35v-.6c0-1.65-1.11-2.42-2.64-2.42-1.24 0-2.08.6-2.53 1.84l-2.57-.55c.57-2.35 2.53-3.82 5.13-3.82 3.61 0 5.42 1.82 5.42 5.48v8.62h-2.37l-.27-1.82c-.95 1.35-2.35 2.04-4.22 2.04-2.4 0-4.18-1.45-4.18-4.21s2.35-4.55 5.89-4.55c0 0-.01-.01 0-.01h-.01Zm-1.22 6.22c.95 0 1.78-.3 2.49-.9.72-.64 1.08-1.49 1.08-2.62v-.3h-2.46c-1.73 0-2.8.83-2.8 2.14-.01.99.59 1.68 1.7 1.68h-.01Zm9.02-11.44h2.58l.28 1.17.15.15.15-.15c.58-.88 2-1.47 3.16-1.47 3.44 0 5.45 2.35 5.45 5.56v8.49h-2.87V11.8c-.09-1.87-.97-2.92-2.86-2.92-1.7 0-3.1 1.4-3.16 3.1v8.32h-2.87V6.56h-.01v-.02Zm27.39 13.76h-2.58l-.28-1.17-.15-.15-.15.15c-.86.88-2.3 1.47-3.73 1.47-3.73 0-6.89-2.92-6.89-7.17s3.16-7.17 6.89-7.17c1.4 0 2.87.59 3.73 1.47l.15.15.15-.15V0h2.86v20.31-.02.01Zm-6.74-11.41c-2.73 0-4.19 2.04-4.19 4.54s1.46 4.54 4.19 4.54c2.43 0 4.16-2.04 4.16-4.54s-1.72-4.54-4.16-4.54Zm14.9 2.87h2.35v-.6c0-1.65-1.11-2.42-2.64-2.42-1.24 0-2.08.6-2.53 1.84l-2.57-.55c.57-2.35 2.53-3.82 5.13-3.82 3.61 0 5.42 1.82 5.42 5.48v8.62h-2.37l-.27-1.82c-.95 1.35-2.35 2.04-4.22 2.04-2.4 0-4.18-1.45-4.18-4.21s2.35-4.55 5.89-4.55c0 0-.01-.01 0-.01h-.01Zm-1.22 6.22c.95 0 1.78-.3 2.48-.9.72-.64 1.08-1.49 1.08-2.62v-.3h-2.46c-1.74 0-2.8.83-2.8 2.14 0 .99.59 1.68 1.7 1.68Z" fill="#ff2b85"></path></svg>
+            </span>
+
+            <!-- BTN SECTION 
+             START-->
+
+            <div class="btnmain">
+                <div class="hello"> 
+                <button class="log">Log in</button>
+                <button class="sign">Sign up</button>                
+                <div class="langue"><svg aria-hidden="true"  focusable="false" class="fl-none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12ZM10.6635 19.3813C9.79267 18.1369 9.11658 16.9361 8.65036 15.75H5.50337C6.58707 17.6234 8.45784 18.9845 10.6635 19.3813ZM4.84335 14.25H8.17237C7.98964 13.4966 7.89523 12.7442 7.8931 11.9853C7.891 11.2379 7.97842 10.4952 8.15242 9.75H4.84335C4.62027 10.4603 4.5 11.2161 4.5 12C4.5 12.7839 4.62027 13.5397 4.84335 14.25ZM5.50337 8.25H8.61663C9.06884 7.07159 9.72906 5.8752 10.586 4.63309C8.41405 5.04747 6.57436 6.39858 5.50337 8.25ZM18.4966 15.75C17.4415 17.574 15.6402 18.9124 13.5102 19.3479C14.3698 18.1154 15.038 16.9255 15.5 15.75H18.4966ZM19.1566 14.25H15.978C16.1608 13.4966 16.2552 12.7442 16.2573 11.9853C16.2594 11.2379 16.172 10.4952 15.998 9.75H19.1566C19.3797 10.4603 19.5 11.2161 19.5 12C19.5 12.7839 19.3797 13.5397 19.1566 14.25ZM18.4966 8.25H15.5338C15.0859 7.08283 14.4339 5.89803 13.5888 4.66862C15.6845 5.12065 17.4545 6.44847 18.4966 8.25ZM12.0752 5.12312C12.8682 6.22942 13.4764 7.26325 13.9116 8.25H10.2388C10.674 7.26325 11.2822 6.22942 12.0752 5.12312ZM9.69994 9.75H14.4504C14.6591 10.5113 14.7593 11.2505 14.7573 11.981C14.7552 12.7258 14.6467 13.4775 14.4269 14.25H9.72354C9.50364 13.4775 9.39519 12.7258 9.3931 11.981C9.39105 11.2505 9.49129 10.5113 9.69994 9.75ZM10.2783 15.75H13.8721C13.4389 16.7093 12.8428 17.7109 12.0752 18.7788C11.3076 17.7109 10.7115 16.7093 10.2783 15.75Z"></path></svg><div class="cl-interaction-secondary-hover f-ribbon-base-font-size fw-ribbon-base-font-weight lh-ribbon-base-line-height ff-ribbon-base-font-family mx-xxs">EN</div><div class="bds-c-menu-selector__chevron"><svg fill="#e21b70" aria-hidden="true" focusable="false" class="fl-interaction-primary" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.5303 9.26347C18.7966 9.52971 18.8208 9.94638 18.603 10.24L18.5304 10.3241L12.3286 16.5269C12.1728 16.6827 11.9204 16.6832 11.764 16.528L5.47165 10.2823C5.17767 9.9905 5.1759 9.51563 5.4677 9.22165C5.73297 8.95439 6.14955 8.92864 6.44397 9.1454L6.52835 9.2177L11.7602 14.4093C11.9165 14.5645 12.169 14.564 12.3248 14.4083L17.4696 9.26356C17.7359 8.99727 18.1525 8.97303 18.4462 9.19086L18.5303 9.26347Z"></path></svg></div></div>    
+                </div>  
+                <svg class="cart" aria-hidden="true" focusable="false" class="fl-brand-primary" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" fill="#e21b70" clip-rule="evenodd" d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z"></path></svg>
+                
+            </div>
+            <!-- BTN SECTION
+             END -->
+
+        </nav>
+
+   </header>
+
+   <!-- MAIN SECTION START -->
+
+   <main>
+
+        <!-- HERO SECTION STARTS -->
+         <!-- hero section have input text or find food btn all respnsive  -->
+        <section class="hero">
+
+            <div class="image1"></div>
+
+            <div class="max-w-xl">
+
+                <h1 class="mainline">It's the food and groceries you love, delivered</h1>
+
+                <div class="bye">
+
+                    <div class="modify" >
+
+                        <div class="searchtext">
+                                <input type="text"  id="place" placeholder="Your street and street number" required>
+                                <button class="local"                                                                           
+                                    " aria-label="Locate me" data-testid="locate-me-with-text"><span class="bds-c-btn__idle-content"><span class="bds-c-btn__idle-content__prefix"><span><svg aria-hidden="true" fill="#d70f64" focusable="false" class="fl-none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path  fill-rule="evenodd" clip-rule="evenodd" d="M12 2C12.4142 2 12.75 2.33579 12.75 2.75L12.7506 3.67925C12.7507 3.88008 12.8998 4.04968 13.0989 4.07562C13.1524 4.08259 13.1986 4.08909 13.2375 4.09514C16.6725 4.62856 19.3848 7.34731 19.9084 10.7855C19.9135 10.8188 19.9189 10.8575 19.9247 10.9019C19.9506 11.1011 20.1204 11.2502 20.3214 11.2502L21.25 11.25C21.6642 11.25 22 11.5858 22 12C22 12.4142 21.6642 12.75 21.25 12.75L20.3212 12.7506C20.1205 12.7507 19.951 12.8995 19.9249 13.0985C19.9211 13.1273 19.9175 13.1532 19.9141 13.1762C19.4013 16.6567 16.647 19.4078 13.1649 19.9158C13.145 19.9187 13.1228 19.9218 13.0984 19.925C12.8995 19.9511 12.7507 20.1206 12.7506 20.3213L12.75 21.25C12.75 21.6642 12.4142 22 12 22C11.5858 22 11.25 21.6642 11.25 21.25L11.2502 20.3213C11.2502 20.1203 11.1011 19.9505 10.9018 19.9246C10.8535 19.9183 10.8115 19.9124 10.7758 19.9069C7.33814 19.379 4.62167 16.6629 4.09327 13.2254C4.08776 13.1896 4.08184 13.1474 4.07552 13.0989C4.04958 12.8997 3.87997 12.7507 3.67912 12.7506L2.75 12.75C2.33579 12.75 2 12.4142 2 12C2 11.5858 2.33579 11.25 2.75 11.25L3.67818 11.2502C3.87895 11.2502 4.04865 11.1015 4.07487 10.9024C4.07777 10.8805 4.08053 10.8604 4.08317 10.8422C4.58738 7.36412 7.32923 4.61075 10.8016 4.08916C10.8307 4.08479 10.8642 4.08013 10.902 4.07519C11.1012 4.04909 11.2502 3.87936 11.2502 3.67848L11.25 2.75C11.25 2.33579 11.5858 2 12 2ZM12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5ZM12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8ZM12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5Z"></path></svg></span></span><span class="local"><span class="local">Locate me</span></span></span>
+                                </button>                   
+                                <button class="second">Find food</button>                   
+                        </div> 
+
+                        <div class="btn-food-main"><button  class="btn-food">Find food</button></div>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- HERO SECTION END  -->
+
+        <!-- SECOND SECTION
+        PATNERS SECTION START -->
+
+        <!-- patners section have card and get btn all are responsive  -->
+
+        <section class="patners">
+
+            <div class="max-w-xl">
+
+                <p class="caption">
+                    You prepare the food, we handle the rest
+                </p>
+                
+            </div>
+
+            <div class="back-ground-image"></div>
+
+            <div class="max-w-xl">
+                    <div class="content">
+                        <h1 class="header-text">
+                            List your restaurant or shop on foodpanda
+                        </h1>
+                        
+                        <p>
+                            Would you like millions of new customers to enjoy your amazing food and groceries? So would we!
+                        </p>
+                        
+                        <p>
+                            It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas - in a heartbeat!
+                        </p>
+                        
+                        <p>
+                            Interested? Let's start our partnership today!
+                        </p>
+                        
+                        <button>Get Started</button>
+
+                    </div>
+
+            </div>
+
+        </section>
+
+        <!-- PATNERS SECTION END -->
+        <!--  -->
+
+        <!-- THIRD SECTION 
+        CITY SECTION -->
+
+        <!-- CITY SECTION HAVE ALL CITY IMAGE WUTH ANIMATION  -->
+
+        <section class=" patners city">
+
+            <div class="max-w-xl">
+                    <p class="caption">
+                       Find us in these cities and many more!
+                    </p>
+            </div>
+
+            <div class="cardcontainer">
+
+                    <div class="card sc ">
+
+                            <img src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Islamabad.jpg?width=720" alt="Islamabad">
+                            <p>Islamabad</p>
+
+                    </div>
+
+                    <div class="card ">
+                         <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Karachi.jpg?width=400&height=400"
+                            alt=""/>
+
+                        <p>Karachi</p>
+
+                    </div>
+                                               
+                    <div class="card sc ">
+
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Lahore.jpg?width=400&height=400"
+                            alt=""/>
+                        <p>Lahore</p>
+
+                    </div>
+                              
+                    <div class="card">
+
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Rawalpindi.jpg?width=400&height=400"
+                            alt=""/>
+                        <p>Rawalpindi</p>
+                    </div>
+                  
+                    <div class="card sc ">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Faisalabad.jpg?width=400&height=400"
+                            alt=""/>
+                        <p>Faisalabad</p>
+                    </div>
+            
+                    <div class="card">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Multan.jpg?width=400&height=400"
+                            alt=""/>
+                        <p>Multan</p>                        
+                    </div>
+                  
+                    <div class="card sc">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Hyderabad.jpg?width=400&height=400"
+                            alt=""/>
+                        <p>Hyderabad</p>
+                    </div>
+                  
+                    <div class="card">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Sialkot.jpg?width=400&height=400"
+                            alt=""/>
+                            <p>Sialkot</p>
+                    </div>
+                  
+                    <div class="card sc">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Peshawar.jpg?width=400&height=400"
+                            alt=""/>
+                        <p>Peshawar</p>
+                    </div>
+                  
+                    <div class="card">
+                        <img
+                            src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Sukkur.jpg?width=400&height=400"
+                            alt="">
+                        <p>Sukhur</p>
+                    </div>
+
+                    <div class="card">
+                        <img 
+                            src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Quetta.jpg?width=720" alt="Quetta">
+                        <p>Quetta</p>
+
+                    </div>
+
+                    <div class="card">
+                            <img
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-RahimYarKhan.jpg?width=720" alt="Rahim Yar Khan">
+                            <p id="sp1">Rahim Yar Khan</p>
+
+                    </div>
+
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Abottabad.jpg?width=720" alt="Abbottabad">
+                            <p>Abbottabad</p>
+                    </div>
+                           
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Sadiqabad.jpg?width=720" alt="Sadiqabad">
+                            <p>Sadiqabad</p>
+                    </div>
+
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Sahiwal.jpg?width=720" alt="Sahiwal">
+                            <p>Sahiwal</p>
+                            
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Sargodha.jpg?width=720" alt="Sargodha">
+                            <p>Sargodha</p>
+                    </div>
+
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Sheikhupura.jpg.jpg?width=720" alt="Sheikhupura">
+                            <p>Sheikhupura</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Jhelum.jpg?width=720" alt="Jhelum">
+                            <p>Jhelum</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Gujranwala.jpg?width=720" alt="Gujranwala">
+                            <p>Gujranwala</p>
+                    </div>
+
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Gujrat.jpg.jpg?width=720" alt="Gujrat">
+                            <p>Gujrat</p>
+                    </div>
+
+                    <div class="card">
+                                <img 
+                                    src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Kamoke.jpg?width=720" alt="Kamoke">
+                                <p>Kamoke</p>
+
+                    </div>
+
+                             
+                    <div class="card">
+                            <img
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Larkana.jpg?width=720" alt="Larkana">
+                            <p>Larkana</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Mangla.jpg?width=720" alt="Mangla">
+                            <p>Mangla</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Mardan.jpg?width=720" alt="Mardan">
+                            <p>Mardan</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Murree.jpg?width=720" alt="Murree">
+                            <p>Murree</p>
+                    </div>
+
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-PanoAqil.jpg?width=720" alt="Pano Aqil">
+                            <p>Pano Aqil</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-Okara.jpg?width=720" alt="Okara">
+                            <p>Okara</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-DeraGhaziKhan.jpg?width=720" alt="Dera Ghazi Khan">
+                            <p id="sp2">Dera Ghazi Khan</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img 
+                                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Sukkur.jpg?width=720" alt="Sukkur">
+                            <p>Sukkur</p>
+                    </div>
+                             
+                    <div class="card">
+                            <img
+                                src="https://images.deliveryhero.io/image/fd-pk/city-tile/city-tile-WahhCannt.jpg?width=720" alt="Wah Cantt">
+                            <p>Wah Cantt</p>
+                    </div>
+                             
+                </div>                                                       
+                </div>
+        </section>
+
+        <!--CITY SECTION END  -->
+
+        <!-- FOURTH SECTION 
+        APP SECTION  -->
+
+        <!-- app section is promotion for app  -->
+
+        
+            
+        <section class=" patners app">
+
+                <div class="max-w-xl">
+                    <p class="caption">Put us in your pocket</p>
+               
+
+                <div class="container">
+
+                    <div class="max-w-xl">
+
+                        <div class="phone-iamge-con">
+                            <img 
+                           id="css" class="image" src="./image/phones.png" alt="">
+                           
+
+                        </div>
+
+                    
+
+                    <div class="content-container">
+                        <p class="subheading">Download the food and groceries you love</p>
+                        <p class="text">It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.
+                        </p>
+                        <div class="btn-container">
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="40"><g fill="none"><path fill="#A9AAA9" d="M110.443 0H9.562c-.368 0-.731 0-1.098.002-.307.002-.612.008-.922.013-.668.016-1.343.057-2.01.176a6.462 6.462 0 0 0-4.711 3.43 6.623 6.623 0 0 0-.626 1.905C.075 6.19.032 6.861.015 7.53c-.009.308-.01.616-.015.922v23.139c.005.31.006.611.015.921.017.671.06 1.342.18 2.004.117.671.314 1.3.626 1.907a6.24 6.24 0 0 0 1.183 1.616 6.293 6.293 0 0 0 1.622 1.18c.612.312 1.236.51 1.906.632.667.119 1.342.158 2.01.176.31.007.615.011.922.011.367.002.73.002 1.098.002h100.881c.362 0 .727 0 1.087-.002.307 0 .62-.004.926-.011.672-.018 1.346-.057 2.005-.176a6.854 6.854 0 0 0 1.914-.632 6.328 6.328 0 0 0 1.622-1.18c.477-.47.875-1.02 1.184-1.616a6.563 6.563 0 0 0 .62-1.907c.125-.662.163-1.333.188-2.004.003-.31.003-.611.003-.921.008-.365.008-.726.008-1.096V9.545c0-.366 0-.73-.008-1.093 0-.306 0-.614-.003-.922-.025-.67-.063-1.34-.188-2.004a6.58 6.58 0 0 0-.62-1.904 6.489 6.489 0 0 0-2.806-2.803A6.845 6.845 0 0 0 114.46.19c-.66-.119-1.333-.16-2.005-.176-.306-.005-.619-.011-.926-.013C111.17 0 110.805 0 110.443 0"></path><path fill="#000" d="M8.469 39.164c-.306 0-.604-.004-.907-.01-.561-.016-1.226-.048-1.875-.164a5.889 5.889 0 0 1-1.66-.549 5.388 5.388 0 0 1-1.402-1.017 5.335 5.335 0 0 1-1.024-1.398 5.75 5.75 0 0 1-.544-1.659C.935 33.694.904 33.011.89 32.49a76.244 76.244 0 0 1-.015-.913V8.452s.01-.691.015-.894c.014-.525.045-1.208.166-1.874a5.724 5.724 0 0 1 .545-1.664 5.343 5.343 0 0 1 1.018-1.4 5.583 5.583 0 0 1 3.064-1.568c.676-.12 1.36-.151 1.881-.164L8.47.876h103.056l.916.013c.514.012 1.2.043 1.864.162a5.987 5.987 0 0 1 1.676.549c.514.263.985.606 1.395 1.017a5.54 5.54 0 0 1 1.027 1.405 5.8 5.8 0 0 1 .537 1.65c.115.632.151 1.28.174 1.89.003.283.003.588.003.89.009.376.009.733.009 1.094v20.95c0 .363 0 .718-.01 1.076 0 .325 0 .623-.003.93-.022.59-.058 1.238-.172 1.855a5.75 5.75 0 0 1-.541 1.672c-.27.52-.614.99-1.018 1.387-.415.419-.886.76-1.403 1.023a5.883 5.883 0 0 1-1.674.55c-.642.117-1.307.15-1.874.164-.293.007-.602.011-.9.011l-1.088.002L8.47 39.164"></path><path fill="#FFFFFE" d="M24.839 20.321c-.026-2.753 2.258-4.094 2.363-4.157-1.293-1.882-3.3-2.139-4.003-2.159-1.684-.177-3.316 1.006-4.175 1.006-.874 0-2.195-.989-3.618-.959-1.831.028-3.546 1.087-4.485 2.73-1.94 3.352-.493 8.278 1.364 10.987.93 1.327 2.016 2.81 3.438 2.756 1.39-.057 1.91-.885 3.59-.885 1.663 0 2.15.885 3.6.852 1.492-.024 2.433-1.333 3.33-2.672 1.074-1.52 1.506-3.02 1.523-3.095-.035-.012-2.9-1.102-2.927-4.404m-2.74-8.098c.748-.934 1.26-2.204 1.118-3.494-1.083.048-2.437.747-3.217 1.661-.69.805-1.306 2.124-1.147 3.365 1.216.09 2.466-.613 3.246-1.532M42.42 27.167h-4.746l-1.14 3.36h-2.01l4.496-12.43h2.09l4.495 12.43H43.56z"></path><path fill="#000" d="M38.166 25.617h3.762l-1.855-5.453h-.05z"></path><path fill="#FFFFFE" d="M55.315 25.996c0 2.816-1.51 4.626-3.79 4.626-1.293 0-2.32-.578-2.856-1.586h-.043v4.488h-1.864v-12.06h1.804v1.507h.034c.519-.972 1.624-1.602 2.891-1.602 2.305 0 3.824 1.818 3.824 4.627z"></path><path fill="#000" d="M53.4 25.996c0-1.835-.951-3.041-2.4-3.041-1.424 0-2.382 1.231-2.382 3.041 0 1.826.958 3.049 2.382 3.049 1.449 0 2.4-1.198 2.4-3.049z"></path><path fill="#FFFFFE" d="M65.307 25.996c0 2.816-1.51 4.626-3.789 4.626-1.293 0-2.32-.578-2.856-1.586h-.043v4.488h-1.864v-12.06h1.804v1.507h.034c.519-.972 1.623-1.602 2.891-1.602 2.305 0 3.823 1.818 3.823 4.627z"></path><path fill="#000" d="M63.391 25.996c0-1.835-.95-3.041-2.398-3.041-1.424 0-2.382 1.231-2.382 3.041 0 1.826.958 3.049 2.382 3.049 1.449 0 2.398-1.198 2.398-3.049z"></path><path fill="#FFFFFE" d="M71.912 27.063c.138 1.233 1.338 2.042 2.977 2.042 1.571 0 2.701-.809 2.701-1.92 0-.966-.682-1.543-2.295-1.939l-1.615-.388c-2.286-.552-3.348-1.619-3.348-3.352 0-2.144 1.873-3.617 4.532-3.617 2.631 0 4.435 1.473 4.495 3.617h-1.881c-.112-1.24-1.14-1.989-2.64-1.989-1.503 0-2.53.758-2.53 1.86 0 .88.656 1.397 2.262 1.793l1.372.335c2.555.604 3.617 1.628 3.617 3.447 0 2.325-1.856 3.782-4.808 3.782-2.761 0-4.627-1.423-4.747-3.671h1.908M83.58 19.32v2.143h1.727v1.474H83.58v4.996c0 .777.346 1.138 1.105 1.138.19 0 .492-.026.613-.043v1.464c-.207.053-.62.087-1.035.087-1.838 0-2.555-.69-2.555-2.447v-5.195h-1.32v-1.474h1.32V19.32h1.872m2.727 6.676c0-2.852 1.682-4.644 4.306-4.644 2.632 0 4.307 1.792 4.307 4.644 0 2.859-1.666 4.643-4.307 4.643-2.64 0-4.306-1.784-4.306-4.643z"></path><path fill="#000" d="M93.02 25.996c0-1.956-.897-3.111-2.407-3.111s-2.407 1.163-2.407 3.111c0 1.964.896 3.11 2.407 3.11 1.51 0 2.407-1.146 2.407-3.11z"></path><path fill="#FFFFFE" d="M96.456 21.463h1.778v1.543h.043c.285-1.025 1.113-1.637 2.183-1.637.268 0 .492.035.64.07v1.74c-.148-.06-.476-.113-.838-.113-1.2 0-1.942.81-1.942 2.085v5.375h-1.864v-9.063m13.235 6.402c-.25 1.645-1.855 2.774-3.909 2.774-2.641 0-4.28-1.766-4.28-4.6 0-2.843 1.648-4.687 4.202-4.687 2.512 0 4.091 1.723 4.091 4.47v.638h-6.413v.113c0 1.55.976 2.566 2.443 2.566 1.035 0 1.847-.49 2.097-1.274h1.77z"></path><path fill="#000" d="M103.391 25.16h4.54c-.044-1.387-.932-2.3-2.227-2.3-1.286 0-2.217.93-2.313 2.3z"></path><path fill="#FFFFFE" d="M37.932 8.74c1.775 0 2.816 1.088 2.816 2.968 0 1.908-1.033 3.005-2.816 3.005h-2.16V8.74h2.16z"></path><path fill="#000" d="M36.7 13.868h1.129c1.251 0 1.972-.778 1.972-2.148 0-1.35-.733-2.136-1.972-2.136H36.7v4.284z"></path><path fill="#FFFFFE" d="M41.798 12.456c0-1.452.812-2.338 2.131-2.338 1.315 0 2.128.886 2.128 2.338 0 1.462-.81 2.344-2.128 2.344-1.323 0-2.131-.882-2.131-2.344z"></path><path fill="#000" d="M45.14 12.456c0-.977-.44-1.547-1.211-1.547-.775 0-1.21.57-1.21 1.547 0 .985.435 1.553 1.21 1.553.771 0 1.211-.572 1.211-1.553z"></path><path fill="#FFFFFE" d="M51.718 14.713h-.925l-.932-3.32h-.072l-.928 3.32h-.916L46.7 10.205h.904l.809 3.44h.067l.928-3.44h.855l.928 3.44h.07l.806-3.44h.891l-1.24 4.508m2.287-4.508h.858v.716h.066c.22-.5.668-.803 1.348-.803 1.007 0 1.563.604 1.563 1.677v2.918h-.892v-2.695c0-.725-.314-1.085-.974-1.085-.66 0-1.078.44-1.078 1.142v2.638h-.89v-4.508m5.254 4.508h.891V8.445h-.891zm2.13-2.257c0-1.452.812-2.338 2.13-2.338 1.316 0 2.129.886 2.129 2.338 0 1.462-.81 2.344-2.128 2.344-1.323 0-2.131-.882-2.131-2.344z"></path><path fill="#000" d="M64.732 12.456c0-.977-.44-1.547-1.211-1.547-.775 0-1.21.57-1.21 1.547 0 .985.435 1.553 1.21 1.553.771 0 1.211-.572 1.211-1.553z"></path><path fill="#FFFFFE" d="M66.587 13.437c0-.81.605-1.279 1.68-1.345l1.223-.07v-.39c0-.475-.315-.744-.924-.744-.497 0-.842.182-.942.5h-.862c.091-.773.82-1.27 1.845-1.27 1.132 0 1.77.563 1.77 1.515v3.08h-.857v-.634h-.072c-.268.451-.762.708-1.355.708-.87 0-1.506-.526-1.506-1.35z"></path><path fill="#000" d="M69.49 13.053v-.377l-1.103.07c-.621.042-.903.253-.903.65 0 .406.352.642.836.642.672 0 1.17-.426 1.17-.985z"></path><path fill="#FFFFFE" d="M71.548 12.456c0-1.424.734-2.326 1.875-2.326.618 0 1.14.294 1.384.79h.068V8.446h.89v6.268h-.853V14h-.071c-.27.493-.797.787-1.418.787-1.149 0-1.875-.902-1.875-2.33z"></path><path fill="#000" d="M72.469 12.456c0 .956.451 1.532 1.206 1.532.751 0 1.216-.584 1.216-1.528 0-.939-.47-1.531-1.216-1.531-.75 0-1.206.58-1.206 1.527z"></path><path fill="#FFFFFE" d="M79.452 12.456c0-1.452.814-2.338 2.131-2.338 1.315 0 2.128.886 2.128 2.338 0 1.462-.809 2.344-2.128 2.344-1.321 0-2.13-.882-2.13-2.344z"></path><path fill="#000" d="M82.795 12.456c0-.977-.44-1.547-1.212-1.547-.775 0-1.21.57-1.21 1.547 0 .985.435 1.553 1.21 1.553.772 0 1.212-.572 1.212-1.553z"></path><path fill="#FFFFFE" d="M84.908 10.205h.857v.716h.066c.22-.5.668-.803 1.348-.803 1.008 0 1.563.604 1.563 1.677v2.918h-.891v-2.695c0-.725-.315-1.085-.975-1.085-.659 0-1.078.44-1.078 1.142v2.638h-.89v-4.508m8.87-1.122v1.142h.978v.75h-.978v2.317c0 .473.195.68.638.68.138 0 .216-.01.34-.021v.74a2.875 2.875 0 0 1-.485.047c-.99 0-1.385-.349-1.385-1.218v-2.545h-.717v-.75h.717V9.083h.892m2.196-.638h.883v2.484h.07c.219-.505.696-.807 1.377-.807.962 0 1.556.609 1.556 1.68v2.91h-.893v-2.69c0-.72-.336-1.085-.966-1.085-.73 0-1.137.46-1.137 1.143v2.633h-.89V8.445m5.946 3.598h2.282c-.021-.708-.453-1.168-1.112-1.168-.66 0-1.12.464-1.17 1.168z"></path><path fill="#FFFFFE" d="M105.055 13.495c-.202.808-.924 1.305-1.956 1.305-1.294 0-2.086-.886-2.086-2.328 0-1.44.81-2.354 2.082-2.354 1.256 0 2.014.857 2.014 2.272v.31h-3.189v.05c.03.79.49 1.292 1.203 1.292.54 0 .91-.195 1.075-.547h.857z"></path></g></svg>
+                            <svg class="center-svg" width="135" height="40" viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="61.043%" y1="4.97%" x2="26.517%" y2="71.939%" id="a"><stop stop-color="#00A0FF" offset="0%"></stop><stop stop-color="#00A1FF" offset=".657%"></stop><stop stop-color="#00BEFF" offset="26.01%"></stop><stop stop-color="#00D2FF" offset="51.22%"></stop><stop stop-color="#00DFFF" offset="76.04%"></stop><stop stop-color="#00E3FF" offset="100%"></stop></linearGradient><linearGradient x1="107.604%" y1="50.085%" x2="-130.554%" y2="50.085%" id="b"><stop stop-color="#FFE000" offset="0%"></stop><stop stop-color="#FFBD00" offset="40.87%"></stop><stop stop-color="orange" offset="77.54%"></stop><stop stop-color="#FF9C00" offset="100%"></stop></linearGradient><linearGradient x1="86.25%" y1="30.901%" x2="-50.108%" y2="135.959%" id="c"><stop stop-color="#FF3A44" offset="0%"></stop><stop stop-color="#C31162" offset="100%"></stop></linearGradient><linearGradient x1="-18.781%" y1="-11.805%" x2="42.11%" y2="35.108%" id="d"><stop stop-color="#32A071" offset="0%"></stop><stop stop-color="#2DA771" offset="6.85%"></stop><stop stop-color="#15CF74" offset="47.62%"></stop><stop stop-color="#06E775" offset="80.09%"></stop><stop stop-color="#00F076" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero"><path d="M130 0H5C2.25 0 0 2.25 0 5v30c0 2.75 2.25 5 5 5h125c2.75 0 5-2.25 5-5V5c0-2.75-2.25-5-5-5z" fill="#A6A6A6"></path><path d="M130 .8a4.2 4.2 0 014.2 4.2v30a4.2 4.2 0 01-4.2 4.2H5A4.2 4.2 0 01.8 35V5A4.2 4.2 0 015 .8h125" fill="#000"></path><path d="M47.42 10.24c0 .84-.25 1.51-.75 2-.56.59-1.3.89-2.2.89-.87 0-1.6-.3-2.21-.9-.61-.6-.91-1.35-.91-2.23 0-.89.3-1.63.91-2.23.61-.6 1.34-.9 2.21-.9.43 0 .84.08 1.23.25.39.17.7.39.94.67l-.53.53c-.4-.47-.94-.71-1.64-.71-.63 0-1.18.22-1.64.67-.46.44-.69 1.02-.69 1.73s.23 1.29.69 1.73c.46.44 1.01.67 1.64.67.67 0 1.23-.22 1.68-.67.29-.29.46-.7.5-1.22h-2.18V9.8h2.91c.02.14.04.29.04.44zM52.03 7.73H49.3v1.9h2.46v.72H49.3v1.9h2.73v.74h-3.5v-6h3.5zM55.28 13h-.77V7.74h-1.68V7h4.12v.74h-1.68V13zM59.94 13V7h.77v6zM64.13 13h-.77V7.74h-1.68V7h4.12v.74h-1.68V13zM73.61 12.22c-.59.61-1.32.91-2.2.91-.88 0-1.61-.3-2.2-.91-.59-.61-.88-1.35-.88-2.22 0-.88.29-1.62.88-2.22.59-.61 1.32-.91 2.2-.91.87 0 1.6.3 2.2.91.59.61.89 1.35.89 2.22-.01.87-.3 1.61-.89 2.22z" stroke="#FFF" stroke-width=".2" fill="#FFF"></path><path d="M69.78 11.72c.44.45.99.67 1.63.67.64 0 1.19-.22 1.63-.67.44-.45.67-1.02.67-1.72s-.22-1.27-.67-1.72c-.44-.45-.99-.67-1.63-.67-.64 0-1.19.22-1.63.67-.44.45-.67 1.02-.67 1.72s.22 1.27.67 1.72z" stroke="#FFF" stroke-width=".2" fill="#000"></path><path stroke="#FFF" stroke-width=".2" fill="#FFF" d="M75.57 13V7h.94l2.92 4.67h.03l-.03-1.16V7h.77v6h-.8l-3.05-4.89h-.04l.03 1.16v3.74h-.77z"></path><path d="M68.13 21.75c-2.35 0-4.27 1.79-4.27 4.25 0 2.45 1.92 4.25 4.27 4.25 2.35 0 4.27-1.8 4.27-4.25 0-2.46-1.91-4.25-4.27-4.25z" fill="#FFF"></path><path d="M68.13 28.58c-1.29 0-2.4-1.06-2.4-2.58 0-1.53 1.11-2.58 2.4-2.58 1.29 0 2.4 1.05 2.4 2.58 0 1.52-1.11 2.58-2.4 2.58z" fill="#000"></path><path d="M58.82 21.75c-2.35 0-4.27 1.79-4.27 4.25 0 2.45 1.92 4.25 4.27 4.25 2.35 0 4.27-1.8 4.27-4.25 0-2.46-1.92-4.25-4.27-4.25z" fill="#FFF"></path><path d="M58.82 28.58c-1.29 0-2.4-1.06-2.4-2.58 0-1.53 1.11-2.58 2.4-2.58 1.29 0 2.4 1.05 2.4 2.58 0 1.52-1.11 2.58-2.4 2.58z" fill="#000"></path><path d="M47.74 23.05v1.8h4.32c-.13 1.01-.47 1.76-.98 2.27-.63.63-1.61 1.32-3.33 1.32-2.66 0-4.74-2.14-4.74-4.8 0-2.66 2.08-4.8 4.74-4.8 1.43 0 2.48.56 3.25 1.29l1.27-1.27c-1.08-1.03-2.51-1.82-4.53-1.82-3.64 0-6.7 2.96-6.7 6.61 0 3.64 3.06 6.61 6.7 6.61 1.97 0 3.45-.64 4.61-1.85 1.19-1.19 1.56-2.87 1.56-4.22 0-.42-.03-.81-.1-1.13h-6.07v-.01zM93.05 24.45c-.35-.95-1.43-2.71-3.64-2.71-2.19 0-4.01 1.72-4.01 4.25 0 2.38 1.8 4.25 4.22 4.25 1.95 0 3.08-1.19 3.54-1.88l-1.45-.97c-.48.71-1.14 1.18-2.09 1.18s-1.63-.44-2.06-1.29l5.69-2.35-.2-.48z" fill="#FFF"></path><path d="M87.25 25.87c-.05-1.64 1.27-2.48 2.22-2.48.74 0 1.37.37 1.58.9l-3.8 1.58z" fill="#000"></path><path fill="#FFF" d="M82.63 30h1.87V17.5h-1.87zM79.57 22.7h-.06c-.42-.5-1.22-.95-2.24-.95-2.13 0-4.08 1.87-4.08 4.27 0 2.38 1.95 4.24 4.08 4.24 1.01 0 1.82-.45 2.24-.97h.06v.61c0 1.63-.87 2.5-2.27 2.5-1.14 0-1.85-.82-2.14-1.51l-1.63.68c.47 1.13 1.71 2.51 3.77 2.51 2.19 0 4.04-1.29 4.04-4.43v-7.64h-1.77v.69z"></path><path d="M77.42 28.58c-1.29 0-2.37-1.08-2.37-2.56 0-1.5 1.08-2.59 2.37-2.59 1.27 0 2.27 1.1 2.27 2.59 0 1.48-.99 2.56-2.27 2.56z" fill="#000"></path><path d="M101.8 17.49h-4.47v12.5h1.87v-4.74h2.61c2.07 0 4.1-1.5 4.1-3.88s-2.04-3.88-4.11-3.88z" fill="#FFF"></path><path d="M101.85 23.52H99.2v-4.29h2.65c1.4 0 2.19 1.16 2.19 2.14 0 .98-.79 2.15-2.19 2.15z" fill="#000"></path><path d="M113.38 21.72c-1.35 0-2.75.6-3.33 1.91l1.66.69c.35-.69 1.01-.92 1.7-.92.97 0 1.95.58 1.96 1.61v.13c-.34-.19-1.06-.48-1.95-.48-1.79 0-3.6.98-3.6 2.81 0 1.67 1.46 2.75 3.1 2.75 1.25 0 1.95-.56 2.38-1.22h.06v.97h1.8v-4.79c.02-2.22-1.64-3.46-3.78-3.46z" fill="#FFF"></path><path d="M113.16 28.58c-.61 0-1.46-.31-1.46-1.06 0-.96 1.06-1.33 1.98-1.33.82 0 1.21.18 1.7.42a2.264 2.264 0 01-2.22 1.97z" fill="#000"></path><path fill="#FFF" d="M123.74 22l-2.14 5.42h-.06L119.32 22h-2.01l3.33 7.58-1.9 4.21h1.95L125.82 22zM106.93 30h1.87V17.5h-1.87z"></path><path d="M10.43 7.53c-.29.31-.46.79-.46 1.4v22.12c0 .62.17 1.1.46 1.4l.07.07 12.39-12.39v-.3L10.51 7.46l-.08.07z" fill="url(#a)"></path><path d="M27.03 24.27l-4.13-4.13v-.3l4.13-4.13.09.05 4.89 2.78c1.4.79 1.4 2.09 0 2.89l-4.89 2.78-.09.06z" fill="url(#b)"></path><path d="M27.12 24.22L22.9 20 10.43 32.46c.46.49 1.22.55 2.08.06l14.61-8.3" fill="url(#c)"></path><path d="M27.12 15.77l-14.61-8.3c-.86-.49-1.62-.43-2.08.06l12.46 12.46 4.23-4.22z" fill="url(#d)"></path></g></svg>
+                            <svg class="last-1" xmlns="http://www.w3.org/2000/svg" width="133" height="40"><g fill="none"><path fill="#B6B6B6" d="M123.928 0H7.416c-.663.01-1.324.068-1.978.176-.65.11-1.28.319-1.867.619-.59.302-1.13.694-1.6 1.162a6.291 6.291 0 0 0-1.163 1.6 6.536 6.536 0 0 0-.616 1.867C.082 6.077.022 6.738.016 7.4c0 .302 0 .606-.016.91v23.332c0 .307 0 .605.016.912.007.662.066 1.323.176 1.976.109.65.317 1.28.616 1.867a6.35 6.35 0 0 0 2.755 2.806c.587.3 1.217.51 1.867.624.654.106 1.316.164 1.978.173H125.9c.66-.008 1.32-.066 1.973-.173a6.728 6.728 0 0 0 1.885-.624 6.155 6.155 0 0 0 1.6-1.163 6.254 6.254 0 0 0 1.168-1.6 6.54 6.54 0 0 0 .61-1.867c.111-.653.173-1.314.185-1.976V7.437a13.284 13.284 0 0 0-.184-1.975 6.608 6.608 0 0 0-.61-1.867A6.4 6.4 0 0 0 129.765.8a6.63 6.63 0 0 0-1.885-.619 13.174 13.174 0 0 0-1.974-.176h-.91L123.929 0z"></path><path fill="#000" d="M8.329 39.139h-.894a12.609 12.609 0 0 1-1.845-.16 5.867 5.867 0 0 1-1.635-.534 5.515 5.515 0 0 1-2.4-2.381 5.707 5.707 0 0 1-.534-1.638 12 12 0 0 1-.162-1.85c0-.209-.016-.902-.016-.902V8.337s0-.683.016-.883c.009-.622.067-1.241.173-1.854a5.662 5.662 0 0 1 .533-1.642c.258-.51.597-.976 1.003-1.38a5.544 5.544 0 0 1 1.384-1.01 5.811 5.811 0 0 1 1.632-.533C6.196.935 6.815.88 7.435.872h118.456c.615.005 1.228.059 1.835.16a5.782 5.782 0 0 1 1.648.533 5.502 5.502 0 0 1 2.384 2.4c.259.514.439 1.063.533 1.63a12.8 12.8 0 0 1 .171 1.867V32.57a12.12 12.12 0 0 1-.168 1.83 5.6 5.6 0 0 1-.533 1.648 5.552 5.552 0 0 1-2.384 2.376c-.519.26-1.074.44-1.646.533-.61.1-1.227.153-1.845.16H8.329v.022z"></path><path fill="#FFF" d="M49.486 27.004h-4.691l-1.139 3.131h-2.061l4.584-11.696h1.947l4.694 11.696h-2.158z"></path><path fill="#000" d="M45.392 25.404h3.494l-1.25-3.35c-.172-.46-.342-.973-.508-1.533-.152.496-.317 1-.493 1.518l-1.243 3.365z"></path><path fill="#FFF" d="M53.649 23.556c0-.645-.021-1.356-.064-2.133h1.867c.07.365.118.735.144 1.107a3.534 3.534 0 0 1 2.667-1.27 3.006 3.006 0 0 1 2.813 1.83 5.56 5.56 0 0 1 .456 2.4c.02.898-.162 1.79-.533 2.608-.31.679-.818 1.25-1.456 1.637a4.16 4.16 0 0 1-2.163.558 5.307 5.307 0 0 1-1.752-.299v3.608l-1.995.17.016-10.216z"></path><path fill="#000" d="M58.892 28.002c.405-.547.61-1.334.61-2.4 0-.975-.168-1.686-.506-2.134a1.6 1.6 0 0 0-1.333-.656 2.152 2.152 0 0 0-1.067.267 4 4 0 0 0-.936.733v4.667c.22.104.454.181.693.23.258.055.52.084.784.085a2.07 2.07 0 0 0 1.755-.792z"></path><path fill="#FFF" d="M62.746 23.556c0-.645-.022-1.356-.064-2.133h1.866c.073.365.122.735.147 1.107.775-.847 1.664-1.27 2.667-1.27a3.006 3.006 0 0 1 2.813 1.83 5.56 5.56 0 0 1 .456 2.4 5.984 5.984 0 0 1-.52 2.608c-.311.68-.82 1.25-1.458 1.637a4.152 4.152 0 0 1-2.163.558 5.307 5.307 0 0 1-1.752-.299v3.608l-1.995.17.003-10.216z"></path><path fill="#000" d="M67.997 28.002c.405-.548.608-1.348.608-2.4 0-.975-.168-1.686-.504-2.134a1.6 1.6 0 0 0-1.334-.656 2.163 2.163 0 0 0-1.067.267 4 4 0 0 0-.936.733v4.667c.222.104.454.18.694.23.257.055.52.084.784.085.68.04 1.335-.256 1.755-.792z"></path><path fill="#FFF" d="M74.298 29.583a4.851 4.851 0 0 1-1.987-2.045 6.715 6.715 0 0 1-.693-3.15 6.587 6.587 0 0 1 .8-3.347 5.155 5.155 0 0 1 2.176-2.066 6.811 6.811 0 0 1 3.089-.691 8.086 8.086 0 0 1 1.925.224 8.18 8.18 0 0 1 1.707.608l-.507 1.533a7.083 7.083 0 0 0-3.037-.757 4.25 4.25 0 0 0-2.134.533 3.547 3.547 0 0 0-1.427 1.531 5.371 5.371 0 0 0-.506 2.438c-.014.757.118 1.51.389 2.218a3.288 3.288 0 0 0 1.237 1.537c.638.399 1.382.596 2.134.565.39-.001.778-.034 1.163-.099a5.88 5.88 0 0 0 1.09-.282v-2.366h-2.715v-1.55h4.643v4.918c-.673.314-1.379.555-2.104.718a9.822 9.822 0 0 1-2.192.25 6.195 6.195 0 0 1-3.05-.72zm14.433.552a7.657 7.657 0 0 1-.138-1.154c-.334.387-.74.705-1.198.933a3.563 3.563 0 0 1-1.667.384 3.139 3.139 0 0 1-1.37-.296 2.248 2.248 0 0 1-.98-.888 2.715 2.715 0 0 1-.364-1.448 2.48 2.48 0 0 1 .914-2.022c.608-.503 1.623-.754 3.043-.754.53 0 1.058.037 1.582.112v-.171c0-.768-.164-1.31-.491-1.627a1.968 1.968 0 0 0-1.414-.472c-.46.006-.92.068-1.365.187a7.16 7.16 0 0 0-1.285.443l-.315-1.451a7.68 7.68 0 0 1 1.403-.446 8.233 8.233 0 0 1 1.842-.202 4.8 4.8 0 0 1 1.92.344c.537.237.974.654 1.235 1.179.328.702.48 1.473.446 2.248V28.5c0 .355.021.901.064 1.637l-1.862-.003z"></path><path fill="#000" d="M87.537 28.535c.384-.178.73-.431 1.016-.744v-1.6a12.913 12.913 0 0 0-1.334-.088c-.825 0-1.395.133-1.71.4a1.333 1.333 0 0 0-.471 1.067c-.03.353.096.701.344.955.26.219.594.33.933.312.425-.007.843-.11 1.222-.302z"></path><path fill="#FFF" d="M92.07 28.045V17.75l1.984-.16v10.1c-.025.276.042.552.19.787a.736.736 0 0 0 .602.232c.181-.008.36-.039.534-.091l.234 1.43a3.432 3.432 0 0 1-.69.18 4.723 4.723 0 0 1-.771.07c-1.389 0-2.083-.751-2.083-2.253zm4.963 0V17.75l1.987-.16v10.1c-.025.276.041.552.19.787a.736.736 0 0 0 .602.232c.18-.008.36-.039.533-.091l.232 1.43a3.403 3.403 0 0 1-.688.18 4.728 4.728 0 0 1-.773.07c-1.387 0-2.081-.751-2.083-2.253zm11.705-2.011h-5.7c.092 1.826.96 2.739 2.609 2.739a5.6 5.6 0 0 0 1.256-.15c.42-.098.832-.231 1.23-.4l.437 1.366a7.443 7.443 0 0 1-3.286.709 4.8 4.8 0 0 1-2.341-.533 3.358 3.358 0 0 1-1.435-1.51 5.374 5.374 0 0 1-.48-2.373 5.614 5.614 0 0 1 .51-2.486 3.704 3.704 0 0 1 1.416-1.6 3.976 3.976 0 0 1 2.096-.55 3.52 3.52 0 0 1 2.061.58c.55.382.977.916 1.227 1.538.275.677.41 1.403.4 2.134v.536z"></path><path fill="#000" d="M106.794 24.767a2.507 2.507 0 0 0-.534-1.563 1.6 1.6 0 0 0-1.25-.52 1.683 1.683 0 0 0-1.264.534 2.779 2.779 0 0 0-.66 1.557l3.708-.008z"></path><path fill="#FFF" d="M110.247 23.612c0-.477-.024-1.208-.066-2.187h1.866c.032.243.062.534.094.867.032.334.048.61.058.822.201-.34.43-.663.683-.966.22-.258.486-.475.784-.637a2.07 2.07 0 0 1 1.022-.248c.27-.007.54.026.8.098l-.251 1.729a2.293 2.293 0 0 0-1.867.266c-.436.33-.815.73-1.123 1.182v5.6h-1.984l-.016-6.526zm6.35 10.088a4.814 4.814 0 0 1-.717-.172l.362-1.454c.168.045.338.082.51.11.192.034.386.051.581.053.89 0 1.55-.568 1.984-1.704l.131-.323-3.2-8.785h2.133l1.616 4.91c.21.632.378 1.276.507 1.928.152-.63.328-1.259.533-1.888l1.64-4.95h2.009l-3.2 8.825a9.08 9.08 0 0 1-.98 2.019 3.416 3.416 0 0 1-1.237 1.136 3.696 3.696 0 0 1-1.725.373 5.448 5.448 0 0 1-.947-.077zM41.595 7.302h3.547l-.099.859h-2.4v1.661h2.275v.8h-2.275v1.84h2.541l-.088.867h-3.501zm5.998 2.955-1.867-2.955h1.184l1.27 2.17 1.333-2.17h1.149l-1.867 2.917 2.02 3.115h-1.201l-1.437-2.373-1.465 2.373h-1.149zm3.987-2.955h1.626c.763 0 1.348.155 1.755.467a1.6 1.6 0 0 1 .608 1.349c.011.367-.081.73-.267 1.048a1.795 1.795 0 0 1-.76.688c-.35.165-.733.248-1.12.24a4.534 4.534 0 0 1-.8-.083v2.323H51.58V7.302z"></path><path fill="#000" d="M54.193 9.995a1.09 1.09 0 0 0 .333-.85.923.923 0 0 0-.338-.8c-.3-.183-.65-.269-1-.246h-.566v2.134c.198.035.399.056.6.061.35.026.697-.08.97-.299z"></path><path fill="#FFF" d="M56.598 7.302h1.04v5.141h2.497l-.088.891h-3.449zm5.121 5.736a2.501 2.501 0 0 1-1.014-1.067 3.467 3.467 0 0 1-.349-1.6 3.568 3.568 0 0 1 .373-1.67 2.603 2.603 0 0 1 1.067-1.103 3.336 3.336 0 0 1 1.667-.379 3.12 3.12 0 0 1 1.57.376c.435.247.785.619 1.006 1.067.238.493.356 1.034.344 1.581a3.582 3.582 0 0 1-.376 1.688c-.239.466-.61.85-1.067 1.105a3.33 3.33 0 0 1-1.64.389 3.107 3.107 0 0 1-1.581-.387z"></path><path fill="#000" d="M64.418 12.3c.294-.195.522-.474.656-.8.15-.374.223-.774.216-1.177a3.267 3.267 0 0 0-.192-1.16c-.12-.322-.334-.6-.614-.8a2.067 2.067 0 0 0-2.157 0c-.295.205-.525.49-.662.822a2.8 2.8 0 0 0-.22 1.133c-.007.4.063.8.207 1.173.262.703.95 1.154 1.699 1.115.378.01.75-.098 1.067-.307z"></path><path fill="#FFF" d="M67.543 7.302h1.888a2.507 2.507 0 0 1 1.566.413 1.4 1.4 0 0 1 .533 1.179c.006.292-.06.582-.192.843a1.867 1.867 0 0 1-.475.594 2.133 2.133 0 0 1-.586.336l1.866 2.667H70.93l-1.57-2.4h-.766v2.4h-1.05V7.302z"></path><path fill="#000" d="M69.178 10.155c.232.005.461-.045.67-.146.187-.09.345-.232.455-.408.11-.189.167-.404.163-.622a.763.763 0 0 0-.288-.664 1.403 1.403 0 0 0-.837-.21h-.755v2.061l.592-.01z"></path><path fill="#FFF" d="M72.957 7.302h3.555l-.102.859h-2.4v1.661h2.254v.8h-2.275v1.84h2.541l-.088.867h-3.485zm7.422 0h1.04v6.032h-1.04zm3.795.869h-1.867l.09-.87h4.694l-.096.87h-1.779v5.163h-1.042zm7.437 4.867a2.496 2.496 0 0 1-1.01-1.067 3.432 3.432 0 0 1-.352-1.6 3.568 3.568 0 0 1 .373-1.67 2.616 2.616 0 0 1 1.067-1.103 3.35 3.35 0 0 1 1.656-.39 3.107 3.107 0 0 1 1.57.377c.436.246.786.617 1.006 1.066.239.493.358 1.035.347 1.582a3.552 3.552 0 0 1-.379 1.688c-.238.466-.61.85-1.067 1.104a3.315 3.315 0 0 1-1.64.39 3.107 3.107 0 0 1-1.57-.377z"></path><path fill="#000" d="M94.313 12.3c.293-.196.52-.475.653-.8.15-.374.223-.774.216-1.177a3.267 3.267 0 0 0-.192-1.16 1.71 1.71 0 0 0-.61-.8 2.07 2.07 0 0 0-2.16 0c-.295.205-.525.49-.662.822-.15.358-.226.744-.221 1.133-.007.4.064.8.208 1.173.127.33.349.613.637.816.316.209.689.313 1.067.3.377.007.748-.1 1.064-.308z"></path><path fill="#FFF" d="M97.438 7.302h1.195l2.984 4.675a20.507 20.507 0 0 1-.037-1.23V7.302h.966v6.032h-1.158l-3.03-4.75c.03.534.046 1.017.046 1.435v3.315h-.966V7.302z"></path><path fill="#C8102E" d="M26.927 7.334h-11.07c-5.219 0-7.128 1.91-7.128 7.128V25.54c0 5.22 1.909 7.129 7.128 7.129h11.07c5.22 0 7.131-1.91 7.131-7.129V14.462c.006-5.219-1.904-7.128-7.13-7.128z"></path><path fill="#FFF" d="M13.745 20.001h.672v3.313h-.672v-1.347h-1.518v1.347h-.672V20h.672v1.334h1.518zm3.787 1.896c0 .534-.267.827-.752.827-.486 0-.758-.296-.758-.85v-1.867h-.672V21.9c0 .93.518 1.464 1.42 1.464.9 0 1.434-.533 1.434-1.493v-1.867h-.672v1.893zm7.766.382L24.546 20h-.552l-.752 2.278L22.514 20h-.715l1.155 3.313h.557l.752-2.177.752 2.177h.563L26.73 20h-.699zm2.635-.392h1.224v-.603h-1.224v-.677h1.776V20H27.27v3.307h2.502v-.602h-1.84zm2.64 1.421h.664v-3.307h-.664zm-11.041-.685-.301.688h-.686L19.993 20h.592l1.454 3.31h-.704l-.275-.685z"></path><path fill="#C8102E" d="M19.783 22.025h1.01l-.512-1.186z"></path><path fill="#FFF" d="M21.396 15.785a4.219 4.219 0 0 1-4.216-4.216h.595a3.622 3.622 0 0 0 7.243 0h.594a4.219 4.219 0 0 1-4.216 4.216z"></path></g></svg>
+        
+                        </div>
+
+                    </div>
+
+                
+                </div>
+                </div>
+
+                
+        </section>
+
+        <!-- OFFICE -->
+         <!-- START -->
+
+        <section class="patners office">
+
+            <div class="max-w-xl">
+
+                <p class="caption">
+                    Take your office out to lunch
+                </p>
+                
+            </div>
+
+            <div class="back-ground-image1"></div>
+
+            <div class="max-w-xl">
+                    <div class="content office-content">
+                        <h1 class="header-text">
+                            foodpanda for business
+                        </h1>
+                        
+                        <p>
+                            Order lunch or fuel for work-from-home, late nights in the office, corporate events, client meetings, and much more.
+
+
+                        </p>
+                                             
+                        <button>Get Started</button>
+
+                    </div>
+
+            </div>
+
+        </section>
+        <!-- END -->
+
+        <!-- FAQ -->
+         <!-- START -->
+
+        <section class="faq" class="max-w-xl">
+
+            <p class="heading">Order food and groceries online from the best restaurants and shops on foodpanda</p>
+            <p class="text">Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your every day easier.</p>
+            
+            <p class="heading">
+                What's new?
+            </p>
+            <ul class="list">
+                <li>
+                   <span> ✓ </span> Wide variety of restaurants and shops, an abundance of cuisines & products.</li>
+                <li> <span> ✓ </span> High quality delivery service.</li>
+                <li> <span> ✓ </span> Live chat feature to give App users instant help when they need it.</li>
+                <li><span>✓ </span> NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you.</li>
+            </ul>
+            <div class="divider"></div>
+
+            <p class="sub-heading">Frequently Asked Questions</p>
+            <p class="bold-text">How can I get foodpanda delivery?</p>
+            <p class="text">To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep!
+
+            </p>
+
+            <p class="bold-text">Which takeout restaurants open now near me?
+            </p>
+            <p class="text">You can check which takeout restaurants are open now near you by simply typing your address in the location bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to your area.
+
+            </p>
+
+            <p class="bold-text">Does foodpanda deliver 24 hours?
+            </p>
+            <p class="text">Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night delivery. Please check which places in Pakistan deliver to you within 24 hours by using your address. You can also order groceries 24 hours a day via pandamart.
+
+            </p>
+
+            <p class="bold-text">Can you pay cash for foodpanda?
+            </p>
+            <p class="text">Yes, you can pay cash on delivery for foodpanda in Pakistan.
+
+            </p>
+
+            <p class="bold-text">How can I pay foodpanda online?
+            </p>
+            <p class="text">You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.
+
+            </p>
+
+            <p class="bold-text">Can I order foodpanda for someone else?
+            </p>
+            <p class="text">Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name and delivery address of the person you're ordering for. Please keep in mind that if the delivery details are not correct and the order cannot be delivered, we won't be able to process a refund.
+            </p>
+
+            <p class="bold-text">How much does foodpanda charge for delivery?
+            </p>
+            <p class="text">Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and the restaurant you are ordering from. You can always check the delivery fee while forming your order. Besides, you can filter the restaurants by clicking on the "Free Delivery" icon at the top of your restaurant listing.
+
+            </p>
+
+            <p class="bold-text">What restaurants let you order online?
+            </p>
+            <p class="text">There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, <a class="link1" href="#_">KFC</a>, <a class="link1" href="#_">McDonald's</a> , <a class="link1" href="#_">Pizza Hut</a> , <a class="link1" href="#_">OPTP</a>, <a class="link1" href="#_">Hardee's</a>, <a class="link1" href="#_">Domino's</a>, <a class="link1" href="#_">Kababjees</a> and many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.
+
+            </p>
+
+            <p class="bold-text">Does foodpanda have minimum order?
+            </p>
+            <p class="text">Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order from and is indicated during your ordering process.
+
+            </p>
+
+            <p class="bold-text">What is the difference between delivery and Pick-Up?
+            </p>
+            <p class="text">If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant for extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants only.
+
+            </p>
+
+            <p class="bold-text">Order food and groceries online with foodpanda now and enjoy a great dining experience!
+
+            </p>
+    
+        
+        
+        </section>
+
+
+   </main>
+
+   <footer>
+
+        <div class="divider max-w-xl"></div>
+
+            <!-- CITY SECTION -->
+
+        <section class="countries max-w-xl">
+            <a href="#_">Laos</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Myanmar</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Thailand</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Hong Kong</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Taiwan</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Malaysia</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Phillipines</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Singapore</a>
+            <div class="vertical-divider"></div>
+            <a href="#_">Bangladesh</a>
+        </section>
+        
+            <!-- LINK SECTION -->
+
+        <section class="link max-w-xl">
+
+                <div class="first-col col">
+                  <p>&copy; 2022 foodpanda</p>
+                </div>
+        
+                <div class="second-col col">
+                  <a href="#_">Press</a>
+                  <a href="#_">Help Center</a>
+                  <a href="#_">Refunds with pandapay</a>
+                  <a href="#_">Pandapay User Account Terms and Conditions</a>
+                  <a href="#_">Terms and conditions</a>
+                  <a href="#_">Privacy policy</a>
+                  <a href="#_">Security</a>
+                  <a href="#_">Download foodpanda App</a>
+                </div>
+        
+                <div class="third-col col">
+                  <a href="#_">Careers</a>
+                  <a href="#_">Suggest a restaurant</a>
+                  <a href="#_">Corporate Customer</a>
+                  <a href="#_">All cuisines</a>
+                  <a href="#_">foodpanda Magazine</a>
+                  <a href="#_">Partner with us</a>
+                  <a href="#_">pandago - Request a rider</a>
+                  <a href="#_">foodpanda Vouchers & Promo</a>
+                </div>
+        
+                <div class="fourth-col col">
+                  <a href="#_">All cities</a>
+                  <a href="#_">Update on COVID-19 in Pakistan</a>
+                  <a href="#_">pandamart Grocery Delivery</a>
+                  <a href="#_">foodpanda home chef</a>
+                  <a href="#_">Become an affiliate</a>
+                  <a href="#_">Ramzan deals</a>
+                </div>
+            </section>
+            
+                <!-- branding  -->
+
+            <section class="branding">
+                <!-- pandalogo -->            
+                <div class="panda"><span aria-label="foodpanda" style="display: flex; align-items: flex-end; justify-content: center; gap: 8px;"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="28" height="28" data-testid="brand-icon-icon" aria-hidden="true" focusable="false" class="logo-icon"><path d="M35 0H5C2.24 0 0 2.24 0 5v30c0 2.76 2.24 5 5 5h30c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5Z" fill="#ff2b85"></path><path d="M14.58 17.53c.41-.04.71-.4.68-.81a.756.756 0 0 0-.81-.68c-.39.03-.68.35-.68.74.02.43.38.76.81.75Zm10.44-1.33c.12-.09.25-.14.4-.16.43-.02.79.32.81.75 0 .41-.33.75-.75.75s-.75-.33-.75-.75c0-.23.11-.45.29-.59Z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M33.51 14.52v-.03c-.15-.3-.1-.65.12-.9a4.983 4.983 0 0 0 .89-4.78c-.06-.19-.34-.24-.61-.29-.26-.05-.52-.09-.62-.26-.09-.15-.06-.38 0-.63.02-.07.03-.13.04-.2.05-.26.07-.51-.06-.64s-.28-.26-.42-.37l-.09-.07c-1-.74-2.23-1.1-3.47-1.03-1.08.05-2.23.41-3.06 1.14-.4.29-.92.37-1.39.22l-.07-.02c-.84-.3-1.7-.52-2.58-.66a14.28 14.28 0 0 0-6.95.66h-.05c-.45.18-.96.1-1.35-.19-1.55-1.37-4.68-1.71-6.72.01-2.23 1.88-2.36 5.17-.71 7.1.22.25.26.6.12.9-.98 2-1.5 4.2-1.51 6.43 0 7.97 6.72 13.77 15 13.77 8.28 0 15-5.8 15-13.77 0-2.22-.52-4.41-1.49-6.41 0 0 0 .02-.01.02h-.01ZM19.9 20.19c1.19 0 2.15.26 2.15.72 0 .46-.96 1.5-2.15 1.5s-2.15-1.04-2.15-1.5c0-.46.96-.72 2.15-.72ZM7.86 11.8a.578.578 0 0 1-.18-.2c-.02-.03-.04-.07-.06-.1-.36-.66-.45-1.44-.23-2.16.42-1.41 1.92-2.24 3.35-2.05.37.05.74.17 1.07.35.14.08.26.17.37.28.04.04.08.09.1.15.02.09 0 .18-.07.25-.06.06-.14.11-.22.15-1.37.8-2.49 1.95-3.52 3.14-.17.19-.35.37-.61.19Zm3.66 11.33c-1.24-.14-2.32-1.45-2.73-2.77-.18-.58-.61-3.26 1.31-5.2.64-.64 1.54-1.21 2.79-1.59.41-.1.82-.15 1.24-.15.62 0 1.36.1 1.95.53 1.24.91 1.26 2.44.52 3.23s-2.4 2.59-2.83 4.06c-.42 1.47-1.01 2.04-2.26 1.9 0 0 .01-.01.01 0v-.01Zm8.4 4.43h-.04c-2.39-.01-4.32-1.7-4.32-3.4 0-.59.26-.89.89-.73.37.09 1.89.48 3.27.48h.35c1.35 0 2.82-.37 3.24-.48h.03c.64-.16.89.14.89.72 0 1.7-1.93 3.39-4.32 3.4h.01v.01Zm11.09-7.22c-.41 1.32-1.49 2.63-2.73 2.77-1.24.14-1.83-.42-2.26-1.9-.43-1.47-2.09-3.28-2.83-4.07-.74-.78-.72-2.32.52-3.23.58-.43 1.33-.53 1.95-.53.42 0 .83.05 1.24.15 1.25.38 2.15.94 2.79 1.58 1.92 1.94 1.49 4.62 1.31 5.2 0 0 .01.03 0 .03h.01Zm1.37-8.84-.06.1a.86.86 0 0 1-.18.2c-.26.18-.44 0-.61-.19-1.03-1.19-2.15-2.34-3.52-3.14a1.07 1.07 0 0 1-.22-.15.33.33 0 0 1-.08-.25c.02-.06.05-.11.1-.15.11-.11.23-.21.37-.28.33-.18.7-.3 1.07-.35 1.43-.19 2.93.64 3.35 2.05.21.72.13 1.5-.23 2.16h.01Z" fill="#fff"></path></svg><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 27" height="22" data-testid="brand-icon-text" aria-hidden="true" focusable="false"><path d="M0 6.56h2.3V4.39C2.3 1.76 3.74 0 6.6 0l1.44.29v2.63l-1.57-.29c-.86 0-1.29.59-1.29 1.47v2.46h2.86v2.63H5.17v11.13H2.3V9.19H0V6.56Zm15.48-.29c3.73 0 7.03 2.92 7.03 7.17s-3.3 7.17-7.03 7.17c-3.73 0-7.03-2.92-7.03-7.17s3.3-7.17 7.03-7.17Zm0 11.7c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54-4.16 2.04-4.16 4.54c-.01 2.5 1.43 4.54 4.16 4.54ZM30.8 6.27c3.73 0 7.03 2.92 7.03 7.17s-3.3 7.17-7.03 7.17c-3.73 0-7.03-2.92-7.03-7.17s3.3-7.17 7.03-7.17Zm0 11.7c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54-4.16 2.04-4.16 4.54c-.01 2.5 1.43 4.54 4.16 4.54Zm22.06 2.34h-2.58L50 19.14l-.15-.15-.15.15c-.86.88-2.3 1.47-3.73 1.47-3.73 0-6.89-2.92-6.89-7.17s3.16-7.17 6.89-7.17c1.4 0 2.87.59 3.73 1.47l.15.15.15-.15V0h2.87v20.3l-.01.01ZM46.12 8.9c-2.73 0-4.19 2.04-4.19 4.54s1.46 4.54 4.19 4.54c2.44 0 4.16-2.04 4.16-4.54S48.56 8.9 46.12 8.9Zm9.62-2.35h2.58l.26 1.17.17.15.15-.15c.86-.88 2.3-1.47 3.73-1.47 3.73 0 6.89 2.92 6.89 7.17s-3.16 7.17-6.89 7.17c-1.4 0-2.87-.59-3.73-1.47l-.15-.15-.17.15v7.38h-2.84V6.55Zm6.74 11.41c2.73 0 4.16-2.04 4.16-4.54s-1.44-4.54-4.16-4.54c-2.44 0-4.16 2.04-4.16 4.54s1.72 4.54 4.16 4.54Zm14.26-6.2h2.35v-.6c0-1.65-1.11-2.42-2.64-2.42-1.24 0-2.08.6-2.53 1.84l-2.57-.55c.57-2.35 2.53-3.82 5.13-3.82 3.61 0 5.42 1.82 5.42 5.48v8.62h-2.37l-.27-1.82c-.95 1.35-2.35 2.04-4.22 2.04-2.4 0-4.18-1.45-4.18-4.21s2.35-4.55 5.89-4.55c0 0-.01-.01 0-.01h-.01Zm-1.22 6.22c.95 0 1.78-.3 2.49-.9.72-.64 1.08-1.49 1.08-2.62v-.3h-2.46c-1.73 0-2.8.83-2.8 2.14-.01.99.59 1.68 1.7 1.68h-.01Zm9.02-11.44h2.58l.28 1.17.15.15.15-.15c.58-.88 2-1.47 3.16-1.47 3.44 0 5.45 2.35 5.45 5.56v8.49h-2.87V11.8c-.09-1.87-.97-2.92-2.86-2.92-1.7 0-3.1 1.4-3.16 3.1v8.32h-2.87V6.56h-.01v-.02Zm27.39 13.76h-2.58l-.28-1.17-.15-.15-.15.15c-.86.88-2.3 1.47-3.73 1.47-3.73 0-6.89-2.92-6.89-7.17s3.16-7.17 6.89-7.17c1.4 0 2.87.59 3.73 1.47l.15.15.15-.15V0h2.86v20.31-.02.01Zm-6.74-11.41c-2.73 0-4.19 2.04-4.19 4.54s1.46 4.54 4.19 4.54c2.43 0 4.16-2.04 4.16-4.54s-1.72-4.54-4.16-4.54Zm14.9 2.87h2.35v-.6c0-1.65-1.11-2.42-2.64-2.42-1.24 0-2.08.6-2.53 1.84l-2.57-.55c.57-2.35 2.53-3.82 5.13-3.82 3.61 0 5.42 1.82 5.42 5.48v8.62h-2.37l-.27-1.82c-.95 1.35-2.35 2.04-4.22 2.04-2.4 0-4.18-1.45-4.18-4.21s2.35-4.55 5.89-4.55c0 0-.01-.01 0-.01h-.01Zm-1.22 6.22c.95 0 1.78-.3 2.48-.9.72-.64 1.08-1.49 1.08-2.62v-.3h-2.46c-1.74 0-2.8.83-2.8 2.14 0 .99.59 1.68 1.7 1.68Z" fill="#ff2b85"></path></svg></span></div>
+                <!-- insta logo -->
+                <div class="insta"><div class="bds-c-btn-circular-cursor"><a class="bds-c-btn-circular bds-c-link-btn-circular bds-c-btn-circular-contained bds-c-btn-circular--size-medium bds-c-btn-circular--without-shadows zi-surface-base" aria-label="" href="https://www.instagram.com/foodpanda_pakistan/" target="_blank"><svg aria-hidden="true" focusable="false" class="fl-none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.51405C14.4518 4.51405 14.7583 4.51405 15.7543 4.59044C18.2827 4.66683 19.432 5.88905 19.5086 8.3335C19.5852 9.32655 19.5852 9.55572 19.5852 12.0002C19.5852 14.4446 19.5852 14.7502 19.5086 15.6668C19.432 18.1113 18.2061 19.3335 15.7543 19.4099C14.7583 19.4863 14.5284 19.4863 12 19.4863C9.54821 19.4863 9.24173 19.4863 8.32231 19.4099C5.7939 19.3335 4.64463 18.1113 4.56801 15.6668C4.49139 14.6738 4.49139 14.4446 4.49139 12.0002C4.49139 9.55572 4.49139 9.25016 4.56801 8.3335C4.64463 5.88905 5.87052 4.66683 8.32231 4.59044C9.24173 4.51405 9.54821 4.51405 12 4.51405ZM12 2.8335C9.47159 2.8335 9.16511 2.8335 8.24569 2.90988C4.87448 3.06266 3.03564 4.896 2.8824 8.25711C2.80579 9.17377 2.80579 9.47933 2.80579 12.0002C2.80579 14.521 2.80579 14.8266 2.8824 15.7432C3.03564 19.1043 4.87448 20.9377 8.24569 21.0904C9.16511 21.1668 9.47159 21.1668 12 21.1668C14.5284 21.1668 14.8349 21.1668 15.7543 21.0904C19.1255 20.9377 20.9643 19.1043 21.1176 15.7432C21.1942 14.8266 21.1942 14.521 21.1942 12.0002C21.1942 9.47933 21.1942 9.17377 21.1176 8.25711C20.9643 4.896 19.1255 3.06266 15.7543 2.90988C14.8349 2.8335 14.5284 2.8335 12 2.8335ZM12 7.26405C9.39497 7.26405 7.24965 9.40294 7.24965 12.0002C7.24965 14.5974 9.39497 16.7363 12 16.7363C14.605 16.7363 16.7503 14.5974 16.7503 12.0002C16.7503 9.40294 14.605 7.26405 12 7.26405ZM12 15.0557C10.3144 15.0557 8.93526 13.6807 8.93526 12.0002C8.93526 10.3196 10.3144 8.94461 12 8.94461C13.6856 8.94461 15.0647 10.3196 15.0647 12.0002C15.0647 13.6807 13.6856 15.0557 12 15.0557ZM16.9036 6.04183C16.2906 6.04183 15.8309 6.50016 15.8309 7.11127C15.8309 7.72238 16.2906 8.18072 16.9036 8.18072C17.5165 8.18072 17.9762 7.72238 17.9762 7.11127C17.9762 6.50016 17.5165 6.04183 16.9036 6.04183Z"></path></svg></a></div><div class="bds-c-btn-circular-cursor"><a class="bds-c-btn-circular bds-c-link-btn-circular bds-c-btn-circular-contained bds-c-btn-circular--size-medium bds-c-btn-circular--without-shadows zi-surface-base" aria-label="" href="https://www.facebook.com/foodpanda.pk/" target="_blank"><svg aria-hidden="true" focusable="false" class="fl-none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.49247 8.66667H6.98495V12H9.49247V22H13.6717V12H16.6807L17.015 8.66667H13.6717V7.25C13.6717 6.5 13.8388 6.16667 14.5911 6.16667H17.015V2H13.8388C10.8298 2 9.49247 3.33333 9.49247 5.83333V8.66667Z"></path></svg></a></div></div>
+                <!-- divelery hero -->
+                <svg class="del" width="160" height="32" viewBox="0 0 300 64" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_1088_35094" maskUnits="userSpaceOnUse" x="0" y="10" width="62" height="45" style="mask-type: luminance;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 10H61.7303V55H0V10Z" fill="white"></path></mask><g mask="url(#mask0_1088_35094)"><path fill-rule="evenodd" clip-rule="evenodd" d="M52.503 31.1474C52.488 31.1544 52.48 31.1614 52.468 31.1664L46.336 33.6684L46.149 33.7534L44.655 40.5824C44.555 40.8154 44.257 40.8704 44.056 40.6754L39.589 35.3934L39.567 35.3784L14.379 46.1874C14.357 46.1994 14.332 46.2044 14.308 46.2044C14.214 46.2044 14.139 46.1294 14.139 46.0344C14.139 45.9804 14.165 45.9304 14.207 45.8994L35.984 29.5984L33.229 23.3084C33.091 23.0214 33.345 22.7164 33.682 22.8004H33.685L40.357 24.4454L45.538 19.8334V19.8344C45.763 19.6594 46.066 19.7844 46.122 20.0604L46.629 26.9904L52.604 30.4854C52.86 30.6494 52.823 31.0274 52.503 31.1474M49.458 11.3434C41.728 8.31042 33.226 10.5874 27.979 16.4184L7.50504 38.3504C7.23004 38.6454 7.35704 39.0154 7.69304 39.0654L13.147 39.4004C13.584 39.4274 13.638 39.8024 13.418 40.0604L0.0850411 54.4424C-0.145959 54.6924 0.133041 55.0834 0.451041 54.9844L19.487 48.9694C19.89 48.8314 20.2 49.1894 20.029 49.5034L17.483 54.0054C17.352 54.2624 17.599 54.6144 17.919 54.5904L45.363 48.4774C51.922 47.4394 57.776 43.0624 60.379 36.4354C64.298 26.4884 59.401 15.2554 49.458 11.3434" fill="#D61F26"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M123.031 44.7135H116.777L121.67 21.7975L128.49 19.2905L123.031 44.7135Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M109.598 31.5875C108.101 31.5875 107.24 32.8265 106.89 34.2645C109.851 34.2645 110.747 33.3395 110.747 32.5715C110.747 32.0325 110.265 31.5875 109.598 31.5875M106.19 38.2775C106.156 38.4355 106.124 38.7255 106.124 38.8825C106.124 39.9035 106.823 40.2525 108.675 40.2525C110.33 40.2525 112.687 39.8385 114.059 39.3615V44.0465C112.307 44.6835 109.563 45.0325 107.365 45.0325C102.202 45.0325 99.7168 43.6295 99.7168 38.9475C99.7168 34.3525 101.851 27.1855 110.077 27.1855C115.3 27.1855 116.861 29.5475 116.861 32.0325C116.861 35.2505 114.091 37.9905 106.19 38.2775" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M134.389 26.365C132.257 26.365 130.885 24.995 130.885 23.114C130.885 20.66 132.607 19.29 134.739 19.29C136.907 19.29 138.247 20.66 138.247 22.509C138.247 24.995 136.557 26.365 134.389 26.365" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M130.001 27.7627H136.438L133.183 44.4607H126.682L128.975 32.7347" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M154.983 27.7627C152.751 33.3717 150.296 38.8517 147.174 44.4607H139.206C138.187 39.1687 137.74 33.5927 137.869 27.7627H144.372C144.241 30.5027 144.275 33.3087 144.431 35.9177C144.465 36.6197 144.531 37.2877 144.592 37.9617H144.629C144.913 37.2877 145.229 36.6197 145.517 35.9177C146.631 33.1737 147.651 30.1867 148.421 27.7627H154.983Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M163.682 31.5875C162.187 31.5875 161.322 32.8265 160.968 34.2645C163.937 34.2645 164.829 33.3395 164.829 32.5715C164.829 32.0325 164.353 31.5875 163.682 31.5875M160.274 38.2775C160.243 38.4355 160.206 38.7255 160.206 38.8825C160.206 39.9035 160.911 40.2525 162.756 40.2525C164.414 40.2525 166.773 39.8385 168.143 39.3615V44.0465C166.389 44.6835 163.649 45.0325 161.452 45.0325C156.286 45.0325 153.801 43.6295 153.801 38.9475C153.801 34.3525 155.935 27.1855 164.16 27.1855C169.386 27.1855 170.945 29.5475 170.945 32.0325C170.945 35.2505 168.177 37.9905 160.274 38.2775" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M183.445 33.656C183.091 33.56 182.389 33.463 181.881 33.463C180.445 33.463 179.298 34.899 178.786 37.544L177.454 44.461H170.945L174.202 27.763H179.079L179.237 29.989C180.733 28.143 181.915 27.186 183.73 27.186C184.557 27.186 185.005 27.249 185.225 27.314L183.445 33.656Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M203.774 27.7627C200.903 35.2197 198.355 40.6687 195.805 44.4317C192.109 49.9467 188.857 51.2207 185.508 51.2207C184.52 51.2207 183.47 50.9617 182.959 50.7077L183.981 45.8967H186.212C187.328 45.8967 187.803 45.4477 188.539 44.4607C187.295 39.9687 186.688 33.6907 186.752 27.7627H193.288C193.155 30.4687 193.189 33.2767 193.351 35.8247C193.383 36.5547 193.443 37.2577 193.506 37.9617H193.541C193.827 37.2877 194.143 36.6197 194.433 35.8877C195.517 33.2417 196.571 30.2137 197.267 27.7627H203.774Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M228.765 44.4609H221.908L223.535 36.0449H217.732L216.105 44.4609H209.256L213.589 22.2139H220.444L218.883 30.1519H224.684L226.245 22.2139H233.094L228.765 44.4609Z" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M242.271 31.5875C240.773 31.5875 239.915 32.8265 239.564 34.2645C242.529 34.2645 243.424 33.3395 243.424 32.5715C243.424 32.0325 242.941 31.5875 242.271 31.5875M238.862 38.2775C238.829 38.4355 238.8 38.7255 238.8 38.8825C238.8 39.9035 239.502 40.2525 241.346 40.2525C243.006 40.2525 245.365 39.8385 246.735 39.3615V44.0465C244.983 44.6835 242.241 45.0325 240.04 45.0325C234.876 45.0325 232.391 43.6295 232.391 38.9475C232.391 34.3525 234.527 27.1855 242.75 27.1855C247.978 27.1855 249.542 29.5475 249.542 32.0325C249.542 35.2505 246.763 37.9905 238.862 38.2775" fill="#D61F26"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M262.031 33.656C261.681 33.56 260.985 33.463 260.472 33.463C259.039 33.463 257.889 34.899 257.38 37.544L256.04 44.461H249.543L252.79 27.763H257.665L257.826 29.989C259.325 28.143 260.501 27.186 262.316 27.186C263.149 27.186 263.593 27.249 263.819 27.314L262.031 33.656Z" fill="#D61F26"></path><mask id="mask1_1088_35094" maskUnits="userSpaceOnUse" x="262" y="27" width="20" height="19" style="mask-type: luminance;"><path fill-rule="evenodd" clip-rule="evenodd" d="M262.734 27.1851H281.091V45.0321H262.734V27.1851Z" fill="white"></path></mask><g mask="url(#mask1_1088_35094)"><path fill-rule="evenodd" clip-rule="evenodd" d="M272.709 32.3181C270.096 32.3181 269.394 36.3011 269.394 38.0881C269.394 39.5211 269.999 39.9341 271.182 39.9341C273.759 39.9341 274.428 35.9491 274.428 34.1371C274.428 32.7341 273.856 32.3181 272.709 32.3181M270.283 45.0321C265.218 45.0321 262.734 42.8641 262.734 38.5311C262.734 33.7181 265.124 27.1851 273.54 27.1851C278.574 27.1851 281.091 29.4171 281.091 33.6901C281.091 38.5981 278.699 45.0321 270.283 45.0321" fill="#D61F26"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M85.7605 39.1688H84.4855L86.7785 27.4398H88.5665C91.2735 27.4398 92.2615 29.0398 92.2615 31.2328C92.2615 35.6658 89.8035 39.1688 85.7605 39.1688V39.1688ZM91.8335 27.8558L96.1665 23.6978C94.4765 22.6808 92.1565 22.2148 89.2625 22.2148H87.7985H80.9775L76.6465 44.4618H83.4615H85.2845C95.3205 44.4618 99.3325 37.4498 99.3325 30.1518C99.3325 28.2568 98.9255 26.7408 98.1375 25.5628L91.8335 27.8558Z" fill="#D61F26"></path></svg>
+
+            </section>
+
+   </footer>
+
+</body>
+
+</html>
